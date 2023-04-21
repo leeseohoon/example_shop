@@ -1,0 +1,37 @@
+.form-group{
+
+    border: 1px solid red;
+
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+
+}
+
+.sub_btn{
+
+    position: relative;
+
+    margin: 0 10px;
+    display: flex;
+    top: 0;
+    left: 40%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    float: left;
+    justify-content: center;
+    background: red;
+
+}

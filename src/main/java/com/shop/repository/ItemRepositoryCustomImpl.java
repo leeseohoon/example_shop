@@ -20,6 +20,11 @@ import javax.persistence.EntityManager;
 import java.time.LocalDateTime;
 import java.util.List;
 
+
+// private BooleanExpression searchSellStatusEq(ItemSellStatus searchSellStatus) = 검색어가 null이 아니면, 해당 검색어가 포함되는 상품을 조회하는 조건을 반환
+// QueryFactory.select(new QMainItemDto = QMainItemDto의 생성자에 반환할 값들을 넣어줍니다. @QueryProjection을 사용하면 DTO로 바로 조회가 가능합니다. 엔티티 조회 후 DTO로 변환하는 과정을 줄일 수 있습니다.
+// .join(itemImg.item, item) = itemimg와 item을 내부 조인 합니다.
+// where(itemNmLike(itemSearchDto.getSearchQuery = 상품 이미지의 경우 대표 상품 이미지만 불러옵니다.
 public class ItemRepositoryCustomImpl implements ItemRepositoryCustom{
 
     private JPAQueryFactory queryFactory;
